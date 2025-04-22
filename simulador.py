@@ -44,6 +44,6 @@ if uploaded_file:
         csv = stats_df.to_csv(index=False).encode('utf-8')
         st.download_button("📤 Baixar resultados em CSV", csv, "resultados_simulador.csv", "text/csv")
     else:
-        st.error("O CSV deve conter as colunas: 'Nome' e 'Odd'.")
+        st.error("O CSV deve conter as colunas: )
 else:
     st.info("Aguardando envio de um arquivo CSV...")
